@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Cpu } from "lucide-react";
+import { Menu, X,  } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -51,9 +52,9 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center group-hover:rotate-12 transition-transform">
-            <Cpu className="text-white w-6 h-6" />
-          </div>
+         
+            <Image src="/android-chrome-512x512.png" alt="Mefron" width={24} height={24} />
+     
           <span className="text-2xl font-bold tracking-tighter text-white">
             MEFRON
           </span>

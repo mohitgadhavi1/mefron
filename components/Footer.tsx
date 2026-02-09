@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Cpu, Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import {  Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -10,15 +11,13 @@ export function Footer() {
           {/* Logo and About */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Cpu className="text-white w-5 h-5" />
-              </div>
+               <Image src="/android-chrome-512x512.png" alt="Mefron" width={24} height={24} />
               <span className="text-xl font-bold tracking-tighter text-white">
                 MEFRON
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
-              India's premier electronics manufacturing company offering end-to-end EMS solutions from prototyping to mass production.
+              India&apos;s premier electronics manufacturing company offering end-to-end EMS solutions from prototyping to mass production.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
